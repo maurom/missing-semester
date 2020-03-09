@@ -216,16 +216,24 @@ En este punto, ya conoces bastante del intérprete de comandos como para realiza
 # Ejercicios
 
 1. Creá un nuevo directorio llamado `ejercicios` en `/tmp` .
+
 2. Buscá el programa `touch` e investigá qué hace. El programa `man` es tu amigo.
+
 3. Utilizando `touch`, creá un nuevo archivo llamado `primera-clase` en `ejercicios`.
+
 4. Escribí lo siguiente en ese archivo, línea tras línea:
-    ```
-    #!/bin/sh
-    curl --head --silent https://missing.csail.mit.edu
-    ```
+
+        #!/bin/sh
+        curl --head --silent https://missing.csail.mit.edu
+
     La primera línea puede ser complicada de escribir. Conviene saber que, en Bash, los comentarios se indican con `#`, y el símbolo `!` tiene un significado especial incluso dentro de cadenas de comillas dobles (`"`). Bash trata diferente las cadenas de comillas dobles de las de comillas simples (`'`), pero para este ejercicio es indistinto. Consultá la página del manual de Bash sobre _entrecomillado_ o [quoting](https://www.gnu.org/software/bash/manual/html_node/Quoting.html) para obtener más información.
+
 5. Tratá de ejecutar el archivo. Investigá por qué no funciona. Podés utilizar el comando `ls` para ello.
+
 6. Investigá sobre el comando `chmod`.
+
 7. Usá `chmod` para permitir que el comando `./primera-clase` se ejecute.
+
 8. Usá `|` y `>` para armar un comando que escriba la fecha de última modificación (que aparece en la línea "last-modified") al ejecutar el archivo `primera-clase`, en un archivo nuevo llamado `ultima-modificacion.txt` dentro de tu directorio home. Todo se debería ejecutar en una sola línea.
+
 9. Escribí un comando que lea el nivel de carga de la batería de tu portátil o la temperatura de la CPU de tu máquina de escritorio desde `/sys`. Nota: si sos usuario de macOS, tu sistema operativo no tiene sysfs, por lo que podes omitir este ejercicio.
