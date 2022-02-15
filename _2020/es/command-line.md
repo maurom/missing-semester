@@ -1,10 +1,10 @@
 ---
 layout: lecture
 title: El entorno de línea de comandos
-date: 2019-02-12
-ready: true
+date: '2019-02-12'
+ready: 'true'
 video:
-  aspect: 56.25
+  aspect: '56.25'
   id: e8BO_dYxk5c
 ---
 
@@ -319,11 +319,9 @@ En muchos casos te encontrarás con software que escucha en puertos específicos
 
 Esto se llama *reenvío de puertos* y puede ser de dos tipos: reenvío de puertos locales y reenvío de puertos remotos (mirá las imágenes para obtener más detalles, crédito de las imágenes a [esta publicación de StackOverflow](https://unix.stackexchange.com/questions/115897/whats-ssh-port-forwarding-and-whats-the-difference-between-ssh-local-and-remot) ).
 
-**Reenvío de puerto local**
-![Local Port Forwarding](https://i.stack.imgur.com/a28N8.png  "Local Port Forwarding")
+**Reenvío de puerto local**![Local Port Forwarding](https://i.stack.imgur.com/a28N8.png%C2%A0 "Local Port Forwarding")
 
-**Reenvío de puerto remoto**
-![Remote Port Forwarding](https://i.stack.imgur.com/4iK3b.png  "Remote Port Forwarding")
+**Reenvío de puerto remoto**![Remote Port Forwarding](https://i.stack.imgur.com/4iK3b.png%C2%A0 "Remote Port Forwarding")
 
 El escenario más común es el reenvío de puertos local, donde un servicio en la máquina remota escucha en un puerto y querés vincular un puerto en tu máquina local para reenviarlo al puerto remoto. Por ejemplo, si ejecutamos `jupyter notebook` en el servidor remoto que escucha el puerto `8888`, para reenviar desde dicho puerto al puerto local `9999`, haríamos `ssh -L 9999:localhost:8888 foobar@remote_server` y luego conectarnos a `locahost:9999` en nuestra máquina local.
 
@@ -362,7 +360,7 @@ Un problema común cuando estamos trabajando en un servidor remoto son las desco
 
 A veces, es conveniente montar un directorio remoto. [sshfs](https://github.com/libfuse/sshfs) puede montar localmente un directorio de un servidor remoto, y así luego podés usar un editor local.
 
-# Shells & Entornos de trabajo (Frameworks)
+# Shells &amp; Entornos de trabajo (Frameworks)
 
 Durante las descripción de las herramienta de shell y las secuencias de comandos, hemos utilizado el shell `bash` porque es, con mucho, el shell más ubicuo y la mayoría de los sistemas lo tienen como opción predeterminada. Sin embargo, no es la única opción.
 
